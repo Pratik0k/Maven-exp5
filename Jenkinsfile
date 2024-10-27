@@ -1,12 +1,12 @@
 pipeline {
     agent any
     tools {
-        maven 'Maven3' // Use the name you gave in the Global Tool Configuration
+        maven 'Maven 3.9.9' // Use the name you gave in the Global Tool Configuration
     }
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-repo/maven-project.git' // Replace with your repository
+                git 'https://github.com/Pratik0k/Maven-exp5.git' // Replace with your repository
             }
         }
         stage('Build') {
